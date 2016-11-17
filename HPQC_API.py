@@ -7,9 +7,9 @@ import Query
 def create_case_to_hpqc(case_info):
     try:
         host = r'https://hpalm.intel.com'
-        query = Query.HPQCQuery('BKC', 'DCG')
+        query = Query.HPQCQuery('KC', 'DG')
         # session = Cred.Session(host, 'jtao5x', '')
-        session = Cred.Session(host, 'ruipengx', '393728-hijk')
+        session = Cred.Session(host, 'rupengx', '39328-hjk')
         # query.get_test_instance_field(host, session)
         #path = r'/Trash/%s/%s/%s' % (case_info['hpqc_project'],case_info['work_week'], 'BKC')
         if case_info['hpqc_project'] == 'Grantley-Refresh':
@@ -49,8 +49,8 @@ def create_case_to_hpqc(case_info):
 def update_case_to_hpqc(case_info):
     try:
         host = r'https://hpalm.intel.com'
-        query = Query.HPQCQuery('BKC', 'DCG')
-        session = Cred.Session(host, 'ruipengx', '393728-hijk')
+        query = Query.HPQCQuery('KC', 'DG')
+        session = Cred.Session(host, 'rupengx', '39328-hjk')
 
         #path = r'/Trash/%s/%s/%s' % (case_info['hpqc_project'],case_info['work_week'],'P&P')
         if case_info['hpqc_project'] == 'Grantley-Refresh':
